@@ -1,0 +1,6 @@
+<h1>Bitcoin Price Checker</h1>
+
+<%= form_for(:bitcoin, :url => {:controller => 'home', :action => 'serch'}) do |f| %>
+  <%= f.select :name, Bitcoin.categories.keys %>
+  <%= f.submit '検索', class: "btn" %>
+<% end %>
